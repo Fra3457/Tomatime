@@ -1,0 +1,360 @@
+/* home style */
+
+/* contatori */
+.counter_container {
+    position: relative;
+    /* top: -30rem; */
+    top: -290px;
+    /* left: 43rem; */
+    left: 450px;
+    width: 290px;
+    height: 40px;
+    
+}
+/*  icona account */
+.AccountImg {
+    position: fixed;
+    top: 2vw;
+    left: 90.75vw;
+}
+
+/* kanban board */
+.kanbanBoard {
+    background-color: rgb(255, 255, 255); /*green*/
+    /*position: fixed;*/
+    position: absolute;
+    bottom: 0;
+    top: 150px;
+    left: 6.25vw;
+    right: 6.25vw;
+    width: 87.5vw; 
+    /*height: 920px; */
+    height: 540px;
+    box-shadow: 0px 3px 6px #00000040;
+    border-radius: 32px 32px 0px 0px;
+}
+
+/* logo */
+.logo_home {
+    position: fixed;
+    /* top: 1.8vw; */
+    top: 20px;
+    left: 6.25vw;
+}
+
+/* TO DO */
+.tasks_to_do {
+    font-size: 32px;
+    font-weight: 800;
+    width: 500px;
+    height: 480px;
+    color: var(--red);
+    position: absolute;
+    top: 4vw;/* 76.8*/
+    left: 2vw;
+    overflow: hidden;
+}
+.tasks_to_do::-webkit-scrollbar {
+  width: 20px;
+  }
+
+.tasks_to_do::-webkit-scrollbar-track {
+  background: var(--gray);
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+.tasks_to_do::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--red);
+  }
+
+.tasks_to_do span{
+    position: fixed;
+    top: 11vw;
+    left: 9.354vw;
+}
+/* sezione rettangolo giallo */
+.time_to_focus {
+    display: flex;
+    background-color: var(--yellow);
+    position: fixed;
+    bottom: 0;
+    top: 150px;
+    left: 40.41vw;
+    width: 19.16vw;
+    height: 540px;
+    border-radius: 8px 8px 0px 0px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.time_to_focus span {
+    margin-top: 0.5vw;
+    font-weight: 600;
+    color: var(--red);
+    font-size: 28px;
+}
+
+.time_to_focus h1 {
+    color: var(--red) !important;
+    font-size: 96px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 1.8vw;
+}
+
+.time_to_focus p {
+    color: var(--red);
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: .5vw;
+}
+/* bottone PLAY */
+.playButton {
+    background-color: var(--yellow);
+    position: absolute;
+    bottom: 17.5vw;
+    right: 5vw;/*CORRETTO*/
+    top: 15vw;    
+}
+
+.stopButton{
+    background-color: var(--yellow);
+    position: absolute;
+    bottom: 204px;
+    right: 95px;
+    
+}
+
+.tomatoPic{
+    position: absolute;
+    /* bottom: 8.5vw; */
+    bottom: 400px;
+    right: 36vw;    
+    z-index: 10;
+}
+
+.tomato-container {
+    z-index: -10;
+    position: absolute;
+    /* transition: all 0.6s ease-in-out; */
+    transition: 1.0s linear;
+    left: 500px; /* Posizione iniziale fuori schermo  */
+    top: 100px; 
+    
+}
+
+.tomato-container.entered {
+    left: 800px; /* Posizione iniziale fuori schermo */
+    z-index: 1;
+}
+
+
+/* WORKING AT */
+.work_at {
+    margin-top: 10vw;
+    font-weight: 600;
+    color: var(--red);
+    font-size: 20px;
+}
+
+/* tasti return TO DO e DONE */
+.todo_done_btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    opacity: .5;
+}
+
+/* DONE */
+.doneSpan{
+    font-size: 32px;
+        font-weight: 800;
+        color: var(--yellow);
+        position: absolute;
+        top: 18px;
+        /*right: 29vw; */
+        right: 380px;
+        z-index: 9999;
+}
+.tasks_done {
+    z-index: 600;
+    font-size: 32px;
+    position: absolute;
+    top: 4vw;
+    right: 3vw;
+}
+.task1 {
+    /* z-index: 9999; */
+    display: flex;
+    margin-top: 1.5vw;
+    margin-left: 1.2vw;
+    border: 0px #ff000000;
+    background-color: transparent;
+    justify-content: flex-start;
+    width: 27.5vw;
+    color: #ff0000;
+    padding: 10px 80px 10px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task1:hover {
+    background-color: rgba(97, 94, 94, 0.1);
+    color: #ff0000;
+    border-style: solid;
+}
+
+.task1 p {
+    margin: 1px;
+    margin-left: .8vw;
+    margin-right: 7px;
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.freccia{
+    position: absolute;
+    left: 27vw;
+    width: 1vw;
+    height: 1vw;
+    
+}
+.task2 {
+    border: 0px #ff000000;
+    background-color: transparent;
+    color: #ff0000;
+    padding: 10px 80px 10px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task2:hover {
+    background-color: rgba(97, 94, 94, 0.1);
+    color: #ff0000;
+    border-style: solid;
+}
+
+.task2-contenuto {
+    display: flex;
+    align-items: center;
+}
+.working-at{
+    border: 3px solid rgb(0, 3, 7);
+    height: 2.5vw;
+    width: 15vw;
+    /* right: 1.95vw; */
+    margin-left: 1.95vw;
+    margin-bottom: .5vw;
+}
+
+.modal-overlayStop {
+    z-index: 90000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  .deletebutton{
+    position: absolute;
+    top: 19vw;
+    left: 61vw;
+  }
+    .modal-title{
+  
+      align-items: center;
+    }
+  
+  
+    .position-button{
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .button-cancel{
+      border-radius: 11px;
+      font-size: 16px;
+      background-color: white;
+      color: #d9391e;
+      border: 1px solid #d9391e;
+      margin-right: 10px;
+      width: 120px;
+      height: 35px;
+      text-align: center;
+      line-height: 15px;
+      
+    }
+    .modal-titlestop{
+      text-align: left;
+    }
+    
+    .button-Stop{
+      border-radius: 11px;
+      font-size: 16px;
+      background-color: #d9391e;
+      color: white;
+      border: 1px solid #d9391e;
+      width: 120px;
+      height: 35px;
+      line-height: 15px;
+    }
+  
+    .button-cancel:hover{
+      border: 1px solid #d9391e;
+    }
+  
+    .button-cancel:focus{
+      border: 1px solid #d9391e;
+      outline: none;
+    }
+  
+    .button-Stop:hover{
+      border: 1px solid #d9391e;
+    }
+  
+    .button-Stop:focus{
+      border: 1px solid #d9391e;
+      outline: none;
+    }
+    
+    .modalStop {
+      z-index: 9999;
+      background-color: rgb(248, 248, 248);
+      opacity: 1;
+      box-shadow: 0px 3px 6px #000029;
+      color: #d9391e;
+      padding: 20px;
+      border-radius: 15px;
+      border: 1px solid black;
+      width: 300px;
+      height: 230px;
+    }  
+  
+    .modalbuttonstop{
+        position:fixed; 
+        bottom: 150px; 
+        right: 625px; 
+    }
+  
+  
+  
+  
+  

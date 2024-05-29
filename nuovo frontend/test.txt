@@ -1,0 +1,18 @@
+const Tasks = (props) => {
+    //inizializzazione dello stato delle tasks
+    const [tasks, setTasks] = useState([])
+    //stato del modale
+    const [show, setShow] = useState(false);
+    //assegnamento della data dell'oggetto corrente alla variabile currentDate
+    let currentDate = new Date();
+    
+    //funzion che si occuperà di gestire le operazioni da fare con l'array delle task
+    function handleTasks() {
+        return tasks.map((task) => {
+            //controllo se la data della task è passata o meno
+            if (new Date(task.date).getTime() <= currentDate.getTime()) {
+                //se la data è passata ritorno la task senza il bottone play e con la classe done
+                return <WorkingAt key={task.id} content={task.content} date={task.date} remove={()=>removeTask(task.id)} className="done"/>
+                return <WorkingAt key={task.id} content={task.content} date={task.date} id={task.id} className="done"/>;
+                return <WorkingAt key={task.id} content={task.content} date={task.date} id={task.id} className="done"/>;
+                return <WorkingAt key={task.id} content={task.content} date

@@ -1,0 +1,44 @@
+.task-done{
+    /* display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 380px;
+    height: 45px;    
+    color: #d9391e;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.2);
+    padding: 10px;     */
+    z-index: 9999;
+    height: 2.5vw;
+        display: flex;
+        margin-top: 1.5vw;
+        margin-left: 1.2vw;
+        border: 1px #ff000000;
+            background-color: rgba(128, 128, 128, 0.2);
+        justify-content: flex-start;
+        width: 24.5vw;
+        color: #ff0000;
+        padding: 10px 80px 10px 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+}
+
+.check{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #ffde59;
+}
+
+.text{
+    margin: 1px;
+        margin-left: .8vw;
+        margin-right: 7px;
+        font-size: 24px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+    
+}

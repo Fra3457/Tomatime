@@ -1,0 +1,169 @@
+/* login style */
+
+/* logo TOMATIME */
+.logo_login {
+    position: fixed;
+    top: 7vw;
+    left: 10vw;
+}
+/* time to focus for a break */
+.slogan{
+    position : relative;
+    top: 20vw;
+    left: -4vw;
+}
+/* sfondo */
+.log_background {
+    background-image: url("../../assets/Sfondo-Tomatime-ed-2.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+/* form */
+.log {
+    display: flex;
+    align-items: center;
+    background-color: white !important;
+    position: relative;
+    top: 13vw;
+    left: 10vw;
+    width: 380px;
+    height: 320px;
+    text-align: center;
+    color: var(--red);
+    box-shadow: 0px 3px 10px #00000033;
+    border-radius: 32px;
+}
+.log p{
+    position: relative;
+    top : 120px;
+    /* left: 3.5vw; */
+    left: 46px;
+    color: var(--red);
+}
+.login {
+    z-index: 999;
+    position: fixed;
+    /* top: 20.5vw; */
+    top: 350px;
+    left: 13vw;
+    width: 150px;
+    height: 45;
+    font-size: 36px;
+    font-weight: 800;
+    /* //padding-bottom: 10px; */
+    color: var(--red);
+}
+
+.email {
+    color: black;
+    position:fixed;
+    padding: 15px 0 0;
+    margin-top: 0;
+    top: 410px;
+    left:13vw;
+    width: 300px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.password {
+    color: black;
+    position: fixed;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    top: 460px;
+    /* left: 13vw; */
+    left: 200px;
+    width: 177px;
+}
+/* campi input */
+.form__field {
+    font-family: inherit;
+    width: 12.5vw;
+    border: 0;
+    border-bottom: 2px solid black;
+    outline: 0;
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+    &::placeholder {
+        color: transparent;
+    }
+
+    &:placeholder-shown~.form__label {
+        font-size: 24px;
+        font-weight: 400;
+        cursor: text;
+        top: 20px;
+    }
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+}
+
+.form__field:focus {
+    ~.form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 18px;
+        color: black;
+        font-weight: 400;
+    }
+
+    padding-bottom: 6px;
+    font-weight: 400;
+    border-width: 3px;
+    /*order-image: linear-gradient(to right, var(--black), var(--red));*/
+    border-image-slice: 1;
+}
+
+/* reset input */
+.form__field {
+
+    &:required,
+    &:invalid {
+        box-shadow: none;
+    }
+}
+
+/* send button */
+.log_button{
+    position: absolute;
+    top: 200px;
+    /* left: 4.7vw; */
+    left: 47px;
+    background-color: var(--red);
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.log_button a{
+    color: white;
+    text-decoration: none;
+}
+.log_button a:hover{
+ color: white;
+}

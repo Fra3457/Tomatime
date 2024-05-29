@@ -1,0 +1,354 @@
+.modal-overlay {
+  z-index: 900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-title{
+    display: flex;
+    align-items: center;
+  }
+
+  .pencil{
+
+    margin-right: 15px;
+    color: #d9391e;
+  }
+
+  .input-title{
+    background-color: white;
+    font-size: 25px;
+    color: #d9391e;
+    border: 0;
+  }
+
+  .input-title:focus{
+    outline: none;
+  }
+
+  ::placeholder{
+    color: #d9391e;
+  }
+
+  .underline{
+    display: flex;
+    border-bottom: 1px solid;
+    width: 100%;
+    color: #d9391e;
+  }
+  .buttons_alfonso{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3vw;
+    margin-right: 1vw;
+  }
+
+  .description{
+    background-color: white;
+    border: 1px solid #eeeeee;
+    width: 400px;
+    height: 50px;
+    border-radius: 15px;
+    text-align: start;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #d9391e;
+    resize: none;      
+  }
+  
+  .description:focus{
+    outline: none;    
+  }
+
+  .position-button{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button-cancel{
+    font-size: 16px;
+    background-color: white;
+    color: #d9391e;
+    border: 1px solid #d9391e;
+    margin-right: 10px;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    line-height: 15px;
+    
+  }
+
+  .button-add{
+    font-size: 16px;
+    background-color: #d9391e;
+    color: white;
+    border: 1px solid #d9391e;
+    width: 120px;
+    height: 35px;
+    line-height: 15px;
+  }
+
+  .button-cancel:hover{
+    border: 1px solid #d9391e;
+  }
+
+  .button-cancel:focus{
+    border: 1px solid #d9391e;
+    outline: none;
+  }
+
+  .button-add:hover{
+    border: 1px solid #d9391e;
+  }
+
+  .button-add:focus{
+    border: 1px solid #d9391e;
+    outline: none;
+  }
+  
+  .modal {
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    color: #d9391e;
+    padding: 20px;
+    border-radius: 15px;
+    
+    width: 450px;
+    height: 230px;
+  }  
+.bottone {
+  width: 640px;
+  height: 80px;
+  position: absolute;
+  left: .5vw;
+  border: 1px dashed #ff0000;
+  background-color: transparent;
+  color: #ff0000;
+  padding: 20px 80px 20px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1vw;
+  align-items: center;
+}
+
+
+.bottone:hover {
+  background-color: rgba(125, 120, 120, 0.1);
+  color: #ff0000;
+  border-color: #ff0000;
+  border-style: solid;
+}
+
+.bottone p {
+  margin: 1px;
+    margin-left: .8vw;
+    margin-right: 7px;
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+  display: flex;
+  align-items: center;
+}
+.taskDelete {
+  border: 0px #ff000000;
+  background-color: rgba(97, 94, 94, 0.1);
+  color: #ff0000;
+  padding: 10px 80px 10px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 25vw;
+  height: 80px;
+  margin-top: 2vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 1vw;
+}
+
+.taskDelete  p {
+   margin: 1px;
+   margin-left: .8vw;
+   margin-right: 7px;
+   font-size: 24px;
+   font-weight: 400;
+   display: flex;
+   align-items: center;
+ }
+
+.modal-overlay_alfonso {
+  z-index: 900;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal_alfonso {
+  z-index: 999;
+  background-color: white;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  color: #d9391e;
+  padding: 20px;
+  border-radius: 15px;
+  width: 600px;
+    height: 348px;
+}
+.modal2_alfonso {
+  z-index: 999;
+  background-color: white;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  color: #d9391e;
+  padding: 20px;
+  border-radius: 15px;
+  width: 600px;
+    height: 348px;
+}
+
+.modal-title_alfonso {
+  display: flex;
+  align-items: center;
+}
+
+.pencil_alfonso {
+
+  margin-right: 15px;
+  color: #d9391e;
+}
+
+
+.underline_alfonso {
+  display: flex;
+  border-bottom: 1px solid;
+  width: 100%;
+  color: #d9391e;
+}
+
+
+.description_alfonso {
+  background-color: white;
+  border: 1px solid #eeeeee;
+  width: 525px;
+  height: 150px;
+  border-radius: 15px;
+  text-align: start;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #d9391e;
+  resize: none;
+}
+
+.description_alfonso:focus {
+  outline: none;
+}
+
+
+.input-title_alfonso {
+  background-color: white;
+  font-size: 25px;
+  color: #d9391e;
+  border: 0;
+}
+
+.input-title_alfonso:focus {
+  outline: none;
+}
+
+.position-button_alfonso {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.deletebutton_alfonso {
+  position: absolute;
+  background-color: transparent;
+  top: 16.1vw;
+  left: 59.5vw;
+}
+.deletebutton_alfonso:hover{
+  .cestino{
+    transition: fill 0.3s ease;
+    fill: white;
+  }
+  .rettangolo_cestino{
+    transition: fill 0.3s ease;
+    fill:#d9391e;
+  }
+}
+.button-cancel_alfonso {
+  font-size: 16px;
+  background-color: white;
+  color: #d9391e;
+  border: 1px solid #d9391e;
+  margin-right: 10px;
+  width: 120px;
+  height: 35px;
+  text-align: center;
+  line-height: 15px;
+
+}
+
+.button-add_alfonso {
+  font-size: 16px;
+  background-color: #d9391e;
+  color: white;
+  border: 1px solid #d9391e;
+  width: 120px;
+  height: 35px;
+  line-height: 15px;
+}
+
+.modal-title2_alfonso h2 {
+  font-size: 24px;
+  margin: 1vw;
+  margin-bottom: 0vw;
+  align-content:start;
+  font-weight: bold;
+  display: flex;
+}
+.modal-title2_alfonso p{
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 0%;
+  display: flex;
+  margin-left: 1vw;
+}
+.button-cancel_alfonso:hover {
+  border: 1px solid #d9391e;
+}
+
+.button-cancel_alfonso:focus {
+  border: 1px solid #d9391e;
+  outline: none;
+}
+
+.button-add_alfonso:hover {
+  border: 1px solid #d9391e;
+}
+
+.button-add_alfonso:focus {
+  border: 1px solid #d9391e;
+  outline: none;
+}

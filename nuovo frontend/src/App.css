@@ -1,0 +1,59 @@
+/* login style */
+@import url(./components/login/log.css);
+/* registration style */
+@import url(./components/RegistrationForm/RegistrationForm.css);
+/* home style */
+@import url(./components/Home/home.css);
+/* modale create task style */
+@import url(./components//Modal/Modal.css);
+/* life Cycle style */
+@import url(./components/lifecycle/index.css); 
+/* done style */
+@import url(./components/Done/Done.css);
+/* Dropdown user */
+@import url(./components/user/user.css);
+/* modal create lc */
+@import url(./components/lifecycle/button/ModalCreate/ModalCreate.css);
+@import url(./components/lifecycle/button/ModalCreate/Dropdown.css);
+/* delete lc */
+@import url(./components/lifecycle/ModalEdit/delete.css);
+:root {
+
+  /* Colors: */
+  --gray: #EEEEEE;
+  --red: #D9391E;
+  --yellow: #FFDE59;
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+html::-webkit-scrollbar {
+  width: 20px;
+  }
+
+html::-webkit-scrollbar-track {
+  background: var(--gray);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #0066ce;
+  }
+
+#root { 
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+* {
+  font-family: 'Sora', sans-serif;
+}
+
+
+
+

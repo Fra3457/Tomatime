@@ -1,0 +1,22 @@
+#dropdown {
+    width: 120px;
+    height: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 24 24' fill='%23FFD700'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    background-position: right center;
+    padding-right: 30px; /* Adjust the space for the arrow */
+    color: red;
+    padding: 3px;
+  }
+  
+  /* Personalizzazione della freccetta solo per Firefox */
+  @-moz-document url-prefix() {
+    #dropdown {
+      padding-right: 0; /* per correggere il posizionamento della freccetta in Firefox */
+    }
+  }
+  
